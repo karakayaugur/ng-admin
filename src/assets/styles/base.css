@@ -1,0 +1,22 @@
+html {
+  font-size: 16px;
+}
+html,
+body {
+  min-block-size: 100%;
+  display: grid;
+  place-content: center;
+}
+
+html,
+body {
+  line-height: 1;
+  background-color: var(--surface-1);
+  font-family: var(--font-face);
+  color: var(--text-1);
+
+  animation: var(--animation-scale-down) reverse,
+    var(--animation-fade-out) reverse;
+  animation-timing-function: var(--ease-squish-5);
+  animation-duration: 0.5s;
+}

@@ -1,0 +1,41 @@
+button {
+  --_color: var(--color, var(--text-2));
+  --_background-color: var(--background, var(--surface-3));
+  --_font-size: var(--font-size, var(--font-size-1));
+  --_padding: var(--padding, var(--size-relative-3) var(--size-relative-5));
+  --_font-weight: var(--font-weight, var(--fw-4));
+  --_border-radius: var(--border-radius, var(--radius-2));
+  --_border: var(--border, var(--border-size-1) solid transparent);
+  transition: background-color 0.25s var(--ease-3), color 0.25s var(--ease-3);
+}
+
+button {
+  // padding-block: 0.75ch;
+  // padding-inline: 1.75ch;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  user-select: none;
+
+  color: var(--_color);
+  background-color: var(--_background-color);
+  font-size: var(--_font-size);
+  padding: var(--_padding);
+  font-weight: var(--_font-weight);
+  border-radius: var(--_border-radius);
+  border: var(--_border);
+
+  &:is(:hover) {
+    cursor: pointer;
+    outline: none;
+    background-color: var(--surface-4);
+    text-shadow: 0 0.2px 0.1px var(--text-2);
+  }
+  &:is(:focus) {
+    outline: none;
+  }
+  &:is(.block) {
+    width: 100%;
+  }
+}

@@ -3,46 +3,40 @@ html {
   --surface-1-light: var(--gray-0);
   --surface-2-light: var(--gray-1);
   --surface-3-light: var(--gray-2);
-  --surface-4-light: var(--gray-3);
-  --surface-5-light: var(--gray-4);
-  --brand-light: var(--yellow-5);
-  --text-1-light: var(--gray-8);
-  --text-2-light: var(--gray-7);
+  --text-1-light: var(--stone-12);
+  --text-2-light: var(--stone-11);
+  --text-3-light: var(--stone-10);
+  --primary-light: var(--yellow);
 
   /* dark */
-  --brand-dark: var(--yellow-5);
-  --text-1-dark: var(--gray-3);
-  --text-2-dark: var(--gray-4);
   --surface-1-dark: var(--stone-12);
   --surface-2-dark: var(--stone-11);
   --surface-3-dark: var(--stone-10);
-  --surface-4-dark: var(--stone-9);
-  --surface-5-dark: var(--stone-8);
+  --text-1-dark: var(--stone-0);
+  --text-2-dark: var(--stone-1);
+  --text-3-dark: var(--stone-2);
+  --primary-dark: var(--yellow);
 }
 
 [color-scheme="light"] {
   color-scheme: light;
-  --color-brand: var(--brand-light);
   --text-1: var(--text-1-light);
   --text-2: var(--text-2-light);
-  --text-white: var(--white);
+  --text-3: var(--text-3-light);
   --surface-1: var(--surface-1-light);
   --surface-2: var(--surface-2-light);
   --surface-3: var(--surface-3-light);
-  --surface-4: var(--surface-4-light);
-  --surface-5: var(--surface-5-light);
+  --primary-color: var(--primary-light);
 }
 
 [color-scheme="dark"] {
   color-scheme: dark;
-  --color-brand: var(--brand-dark);
-  --brand-highlight: var(--brand-dim-highlight);
   --text-1: var(--text-1-dark);
   --text-2: var(--text-2-dark);
-  --text-white: var(--white);
+  --text-3: var(--text-3-dark);
   --surface-1: var(--surface-1-dark);
   --surface-2: var(--surface-2-dark);
   --surface-3: var(--surface-3-dark);
-  --surface-4: var(--surface-4-dark);
-  --surface-5: var(--surface-5-dark);
+
+  --primary-color: var(--primary-dark);
 }

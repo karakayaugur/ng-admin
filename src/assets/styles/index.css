@@ -1,6 +1,12 @@
-@import url(./utils/reboot.css);
+/* Variables */
 @import url(./abstract/colors.css);
-@import url(./abstract/variables.css);
+@import url(./abstract/borders.css);
+@import url(./abstract/shadows.css);
+@import url(./abstract/sizes.css);
+@import url(./abstract/fonts.css);
+/* End Of Variables */
+
+@import url(./utils/reboot.css);
 @import url(./theme.css);
 @import url(./font.css);
 @import url(./utils/animations.css);
